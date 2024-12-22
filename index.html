@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You - Nhật Vy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@0;1&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="fjalla-one-regular " style="overflow-x: hidden;">
+  <div id="main_title"style="overflow: hidden">
+    <div style="position: absolute; top: -30%; left: -5%;opacity:0.85" class="rotate45">
+      <img src="Assets/img/christmas_1.png" alt="">
+    </div>
+    <div style="position: absolute; bottom: -36%; right: -7%;opacity:0.85" class="rotate45">
+      <img src="Assets/img/christmas_2.png" alt="">
+    </div>
+    <div type="button" style="" onclick="title_transition()" id="start_title">Bấm tui nèe</div>
+    <div style="color: white; font-size: 70px; position: absolute; top: 10%; text-decoration: underline; text-underline-offset: 10px;" class="title active">FOR YOU - MY LOVER</div>
+    <div style="color: white; font-size: 70px; position: absolute; top: 50%;"  id="title_1" class="title inactive"> XIN CHÀO EM BÉ CỦA ANH <span style="color: rgb(203, 31, 31)">❤ ❤</span></div>
+    <div style="color: white; font-size: 70px; position: absolute;top: 50%;"  id="title_2" class="title inactive"> TRƯỚC TIÊN THÌ ANH BÉ MUỐN NÓI LÀ </div>
+    <div style="color: white; font-size: 70px; position: absolute; top: 50%;"  id="title_3" class="title inactive"> ANH BÉ YÊU BÉ NHẮM 😘😘</div>
+    <div style="color: white; font-size: 70px; position: absolute;top: 50%;"  id="title_4" class="title inactive"> ANH CÓ MỘT MÓN QUÀ MUỐN TẶNG BÉ</div>
+    <div style="color: white; font-size: 70px; position: absolute;top: 50%;"  id="title_5" class="title inactive"> BÉ BẤM VÔ ĐÂY NHAAA</div>
+    <a  href="#main_content" id="click_me">CLICK ME HIHI</a>
+    <div style="position: absolute;right: 6%; top: 10%; " class="rotate10">
+      <picture>
+        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f618/512.webp" type="image/webp">
+        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f618/512.gif" alt="😘" width="120" height="120">
+      </picture>
+    </div>
+    <div style="position: absolute;left: 12%; bottom: 10%; " class="reverse_rotate10">
+      <picture>
+        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f618/512.webp" type="image/webp">
+        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f618/512.gif" alt="😘" width="120" height="120">
+      </picture>
+    </div>
+    <div style="position: absolute;left: 10%; top: -18%; transform: scale(30%); ">
+      <img src="Assets/img/heart_icon.png" class="" alt=""> 
+    </div>
+    <div style="position: absolute;right: 9%; top: -20%; transform: scale(30%); ">
+      <img src="Assets/img/heart_icon.png" class="" alt=""> 
+    </div>
+  </div>
+
+  <div id="background_main_container" style="overflow: hidden">
+    <div style=" font-size: 70px;color: rgb(61, 61, 200); text-align: center"> BÉ ĐANG CẢM THẤY NHƯ NÀO DỢ 🥰</div>
+    <div id="main_content" >
+
+      <div style="position: absolute; right: 5%; top: -10%">
+        <picture>
+          <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.webp" type="image/webp">
+          <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="80" height="80">
+        </picture>
+      </div>
+
+      <div style="position: absolute; left: 5%; top: -30%">
+        <picture>
+          <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.webp" type="image/webp">
+          <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="100" height="100">
+        </picture>
+      </div>
+
+      <div onmouseout="normal_background()" onmouseover="happy_background()" style="flex-basis: 33.3%; display: flex; flex-direction: column; align-items: center; justify-content: center;" id="happy_container">
+        <div  >
+          <picture>
+            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f601/512.webp" type="image/webp">
+            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f601/512.gif" alt="😁" width="100" height="100">
+          </picture>
+        </div>
+        <div  style="display: inline-block" id="happy_title">ĐANG DUI QUÉ CHỪNG</div>
+      </div>
+
+      <div onmouseout="normal_background()" onmouseover="love_background()" style="flex-basis: 33.3%; display: flex; flex-direction: column; align-items: center; justify-content: center;" id="love_container">
+        <div  >
+          <picture>
+            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f970/512.webp" type="image/webp">
+            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f970/512.gif" alt="🥰" width="100" height="100">
+          </picture>
+        </div>
+        <div  style="display: inline-block" id="love_title">ĐANG YÊU ANH Ó</div>
+      </div>
+
+      <div onmouseout="normal_background()" onmouseover="sad_background()" style="flex-basis: 33.3%; display: flex; flex-direction: column; align-items: center; justify-content: center;" id="sad_container">
+        <div >
+          <picture>
+            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f979/512.webp" type="image/webp">
+            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f979/512.gif" alt="🥹" width="100" height="100">
+          </picture>
+        </div>
+        <div  style="display: inline-block" id="sad_title">ĐANG BÙN ÙI</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="video_container" id="happy_video_container">
+    <a onclick="closeVideoContainer()" style="cursor: pointer;position: absolute; right: 5%; top: 5%; font-size: 30px;" >
+      x
+    </a>
+    <div class="title" >A WILD HAPPY CAT JUST APPEARED !!! </div>
+    <div class="" style="line-height: 1.5">Anh cảm thấy rất tuyệt khi biết rằng em đang rất vui, anh mong rằng em sẽ luôn là 1 bé mèo dui dẻ yêu đời, 
+      anh chúc bé nhiều sức khoẻ và anh mong rằng bé sẽ 
+      thật hạnh phúc và luôn giữ nụ cười trên môi, anh rất 
+      thích nụ cười của em, tất nhiên là em cười ngang hay 
+      dọc gì anh cũng thích, em cười lên trông xinh lắm! 
+      Love you so much <span style="font-size: 12px"> I almost bust a nut.. nevermind hihi</span>   
+    </div>
+    <div>
+      <video src="" width="" height=""></video>
+
+    </div>
+  </div>
+  <div class="video_container" id="love_video_container">
+    <a onclick="closeVideoContainer()" style="cursor: pointer;position: absolute; right: 5%; top: 5%; font-size: 30px;" >
+      x
+    </a>
+    <div class="title" >LOOK WHAT I'VE FOUND, A LOVING CAT!</div>
+    <div class="" style="line-height: 1.5">
+      Em cảm thấy rất yêu anh ỏ, biết gì hok, anh bé cũng yêu bé nhìu nhắm.
+      Nhưng mò yêu anh thì cũng đừng quên yêu bản thân nha, nếu thấy mệt mỏi
+      thì cứ nhõng nhẽo dới anh, phải giữ gìn sức khoẻ, ăn uống đầy đủ, đi nhủ sớm
+      hãy nhớ rằng anh luôn ở bên cạnh em. Chúc em thật nhiều niềm vui hạnh phúc, sống với đam 
+      mê và tình yêu mãnh liệt! You are literally my lovely naughty queen 😜
+    </div>
+    <div>
+      <video src="" width="" height=""></video>
+
+    </div>
+  </div>
+
+  <div class="video_container" id="sad_video_container">
+    <a onclick="closeVideoContainer()" style="cursor: pointer;position: absolute; right: 5%; top: 5%; font-size: 30px;" >
+      x
+    </a>
+    <div class="title" >AWW, I THINK YOU'RE GONNA NEED A HUG, COME HERE BABY 🤗</div>
+    <div class="" style="line-height: 1.5">
+      Ui ui em bé của anh, bé đang bùn ỏ, ai làm em bùn, là đứa nào làm em bùn
+      , nói dới anh anh xử nó, còn nếu như anh làm em bùn thì..., thì em làm gì anh cũng
+      được hết! o((>ω< ))o. Giỡn chứ, nếu em đang bùn, thì hãy gọi cho anh nha, anh xoa òi anh dỗ
+      bé. Hãy luôn nhớ rằng bé không bao giờ đi một mình, có anh đồng hành ở đây, nếu thấy áp lực quá
+      thì về đây với anh. Yêu bé lắm, mong rằng bé sẽ vượt qua và vui tươi trở lại, chúc em sức khoẻ và 
+      mong rằng hạnh phúc và những điều mà em mơ ước sẽ đến với em! LOVE YOU 3000 🥰 
+    </div>
+    <div style="position: absolute;">
+      <video src="" width="" height=""></video>
+
+    </div>
+  </div>
+  <div id="video_background"></div>
+
+  <div id="ending_content">
+    <div style="position: absolute; right: 25%; top: 5%">
+      <picture>
+        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f52e/512.webp" type="image/webp">
+        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f52e/512.gif" alt="🔮" width="100" height="100">
+      </picture>
+    </div>
+
+    <div style="position: absolute; left: 25%; top: 5%">
+      <picture>
+        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f52e/512.webp" type="image/webp">
+        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f52e/512.gif" alt="🔮" width="100" height="100">
+      </picture>
+    </div>
+
+    <div style="font-size: 70px;text-align: center;text-underline-offset: 8px; text-decoration: underline;
+     font-size: 72px;
+    background: -webkit-linear-gradient(	#a796e8, #cdb5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    "> MEMORY SHARDS </div> 
+    <div id="ending_container">
+      <div> 
+        <img src="Assets/img/decoration_frame.png" alt=""> 
+      </div>
+      <div style="position: relative; width: 100%;">
+        <div  class="emoji" onclick="graduationContainer()" type="button" id="graduation_emoji" style="">
+          <picture>
+            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f393/512.webp" type="image/webp">
+            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f393/512.gif" alt="🎓" width="150" height="150">
+          </picture>
+        </div>
+        <div class="emoji" onclick="cinestarContainer()" type="button" id="popcorn_emoji">
+          <picture>
+            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f37f/512.webp" type="image/webp">
+            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f37f/512.gif" alt="🍿" width="150" height="150">
+          </picture>
+        </div>
+        <div class="emoji" onclick="sexy1Container()" type="button" id="rose_emoji">
+          <picture>
+            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f339/512.webp" type="image/webp">
+            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f339/512.gif" alt="🌹" width="150" height="150">
+          </picture>
+        </div>
+        <div class="emoji" onclick="friesContainer()" type="button" id="spaghetti_emoji">
+          <picture>
+            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f35d/512.webp" type="image/webp">
+            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f35d/512.gif" alt="🍝" width="150" height="150">
+          </picture>
+        </div>
+        <div class="emoji" onclick="sexy2Container()" type="button" id="fireheart_emoji">
+          <picture>
+            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f_200d_1f525/512.webp" type="image/webp">
+            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f_200d_1f525/512.gif" alt="❤" width="150" height="150">
+          </picture>
+        </div>
+        <div class="emoji" onclick="fourPsPizzContainer()" type="button" id="kissingcat_emoji">
+          <picture>
+            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f63d/512.webp" type="image/webp">
+            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f63d/512.gif" alt="😽" width="150" height="150">
+          </picture>
+        </div>
+        <div class="emoji" onclick="shhCuteContainer()" type="button" id="shh_emoji">
+          <picture>
+            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f92b/512.webp" type="image/webp">
+            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f92b/512.gif" alt="🤫" width="150" height="150">
+          </picture>
+        </div>
+
+        <div class="emoji" onclick="cinematicContainer()" type="button" id="letterlove_emoji">
+          <picture>
+            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f48c/512.webp" type="image/webp">
+            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f48c/512.gif" alt="💌" width="150" height="150">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="image_container">
+    <div class="image_holder" id="4ps_pizz">
+      <div class="red_text" > AWW SO CUTEEE</div>
+      <div style="display: flex; justify-content: center;">      
+        <img src="Assets/img/4ps_pizz.png" alt="">
+      </div>
+      
+    </div>
+    <div class=" image_holder" id="shh_cute">
+      <div class="red_text" > AWW SO CUTEEE</div>
+      <div style="display: flex; justify-content: center;">      
+        <img src="Assets/img/shhh_cute.png" alt="">
+      </div>
+    </div>
+    <div class=" image_holder" id="graduation">
+      <div class="red_text" > AWW SO CUTEEE</div>
+      <div style="display: flex; justify-content: center;">      
+        <img src="Assets/img/graduation.png" alt="">
+      </div>
+    </div>
+    <div class=" image_holder" id="fries">
+      <div class="red_text" > AWW SO CUTEEE</div>
+      <div style="display: flex; justify-content: center;">      
+        <img src="Assets/img/fries.png" alt="">
+      </div>
+    </div>
+    <div class=" image_holder" id="cinestar">
+      <div class="red_text" > AWW SO CUTEEE</div>
+      <div style="display: flex; justify-content: center;">      
+        <img src="Assets/img/cinestar.png" alt="">
+      </div>
+    </div>
+    <div class=" image_holder" id="cinematic">
+      <div class="red_text" > AWW SO CUTEEE</div>
+      <div style="display: flex; justify-content: center;">      
+        <img src="Assets/img/cinematic.png" alt="">
+      </div>
+    </div>
+    <div class=" image_holder" id="sexy1">
+      <div class="red_text" > AWW SO CUTEEE</div>
+      <div style="display: flex; justify-content: center;">      
+        <img src="Assets/img/sexy_1.png" alt="">
+      </div>
+    </div>
+    <div class=" image_holder" id="sexy2">
+      <div class="red_text" > AWW SO CUTEEE</div>
+      <div style="display: flex; justify-content: center;">      
+        <img src="Assets/img/sexy_2.png" alt="">
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <script src="index.js"> </script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+html{
+  scroll-behavior: smooth;
+
+}
+
+
+
+body{
+  margin: 0;
+  position: relative;
+  border-spacing: border-box;
+}
+
+#main_title{
+  padding: 350px 100px 350px 100px;
+  background: linear-gradient(to right, #62cff4, #2c67f2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.fjalla-one-regular {
+  font-family: "Fjalla One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fjalla-one-bold {
+  font-family: "Fjalla One", serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.rotate10 {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.reverse_rotate10 {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+#main_title .title{
+  transition: 1s ease-in-out;
+
+}
+
+#main_title .inactive{
+  opacity: 0;
+}
+
+#main_title .active{
+  opacity: 1;
+  display: block;
+}
+
+
+#background_main_container{
+  background: linear-gradient(to right, var(--color1), var(--color2));
+  padding: 50px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: --color1 0.5s, --color2 0.5s;
+}
+#main_title #click_me{
+  color: white; 
+  font-size: 40px; 
+  position: absolute; 
+  top: 55%; 
+  left: -40%;
+  transform: translateX(50%);  
+  transition: 0.7s ease-in-out; 
+  border: 1px white solid;
+  padding: 20px; 
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+#main_title #start_title{
+  color: white; 
+  font-size: 40px; 
+  position: absolute; 
+  top: 40%; 
+  z-index: 2;
+  left: 35%;
+  transform: translateX(50%);  
+  transition: 0.7s ease-in-out; 
+  border: 1px white solid;
+  padding: 20px; 
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+}
+
+#main_title #start_title::after{
+  position: absolute;
+}
+
+#main_title #start_title:hover{
+  background-color: white;
+  color:black;
+}
+
+#main_title #click_me:hover{
+  background-color: white;
+  color: black;
+
+}
+
+#main_content{
+  margin-top:50px;
+  padding: 80px;
+  padding-top:50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#happy_container{
+  transition: 0.5s ease-in-out;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#love_container{
+  transition: 0.5s ease-in-out;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#sad_container{
+  transition: 0.5s ease-in-out;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#happy_container #happy_title{
+  display: inline-block;
+  font-size: 30px;
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+#love_container #love_title{
+  display: inline-block;
+  font-size: 30px;
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+#sad_container #sad_title{
+  display: inline-block;
+  font-size: 30px;
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+@property --color2{
+  syntax: '<color>';
+  initial-value: #9E9E9E; 
+  inherits: false;
+}
+
+@property --color1{
+  syntax: '<color>';
+  initial-value: #D3D3D3; 
+  inherits: false;
+}
+
+
+#happy_container::after{
+  position: absolute;
+  color: rgb(245, 239, 239)
+}
+
+#happy_container:hover{
+ transform: scale(1.2);
+ color: rgb(208, 83, 10);
+ opacity: 1;
+}
+
+#love_container::after{
+  position: absolute;
+  color: rgb(162, 39, 39);
+}
+
+#love_container:hover{
+ transform: scale(1.2);
+ color: rgb(162, 39, 39);
+ opacity: 1;
+}
+
+#sad_container::after{
+  position: absolute;
+  color: rgb(29, 56, 135)
+}
+
+#sad_container:hover{
+ transform: scale(1.2);
+ color: rgb(29, 56, 135);
+ opacity: 1;
+}
+
+
+.rotate45{
+  -webkit-transform: rotate(43deg);
+  -moz-transform: rotate(43deg);
+  -o-transform: rotate(43deg);
+  -ms-transform: rotate(43deg);
+  transform: rotate(43deg);
+}
+
+.rotate20{
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.video_container{
+  position: fixed;
+  top:-80%;
+  margin: 0px 50px 0px 50px;
+  z-index: 3;
+  padding: 30px 100px 30px 100px;
+  border: 2px black solid;
+  background-color: white;
+  border-radius: 12px;
+  opacity: 0;
+  font-size: 26px;
+  transition: 0.5s ease-in-out;
+}
+
+#happy_video_container{
+  background: linear-gradient(#fff060, #f2db00);
+  color: rgb(124, 79, 12);
+}
+
+
+#love_video_container{
+  background: linear-gradient(#ffbaba, #ff5252);
+  color: rgb(115, 29, 5);
+}
+
+#sad_video_container{
+  background: linear-gradient(#B9E5E8, #7AB2D3);
+  color: rgb(21, 44, 120);
+}
+
+.video_container .title{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#video_background{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  background-color: black;
+  position: fixed;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+
+}
+
+
+#ending_content{
+  padding: 180px;
+  background: linear-gradient(#336699,#99CCFF );
+  position: relative;
+  color: white;
+}
+.red_text{
+  font-size: 45px;
+  text-align: center;
+  color: #ff5252;
+
+
+}
+
+
+#ending_container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.emoji{
+  opacity: 0.7;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.emoji:hover{
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+#popcorn_emoji{
+  position: absolute;
+  right: 30%;
+  top:40%;
+}
+
+#graduation_emoji{
+  position: absolute;
+  right: 10%;
+  top:20%;
+}
+#rose_emoji{
+  position: absolute;
+  left: 10%;
+  top:35%;
+}
+#spaghetti_emoji{
+  position: absolute;
+  left: 25%;
+  bottom:22%;
+}
+
+#fireheart_emoji{
+  position: absolute;
+  left: 35%;
+  top:10%;
+}
+
+#kissingcat_emoji{
+  position: absolute;
+  right: 10%;
+  bottom:15%;
+}
+#letterlove_emoji{
+  position: absolute;
+  right: 35%;
+  bottom:0;
+}
+
+#shh_emoji{
+  position: absolute;
+  right: 0;
+  bottom:40%;
+}
+
+#image_container{
+  position: fixed;
+  left: 35%;
+  top:-110%;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  max-width: 750px;
+  padding: 50px;
+  padding-top: 20px;
+  background-color: rgb(229, 200, 200);
+  border-radius: 12px;
+}
+
+.image_holder{
+  display: none;
+}
+
+
+
+#image_container .image_active{
+  display: block;
+}
