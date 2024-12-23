@@ -26,6 +26,118 @@ let sexy2 = document.getElementById("sexy2");
 let imageContainer = document.getElementById("image_container_center");
 let imageHolder = document.getElementById("image_container");
 
+function closeShhCute(){
+  setTimeout(function(){
+    shhCute.classList.remove("image_active");
+  }, 505);
+  imageContainer.style.top = -110 + "%";
+  imageContainer.style.opacity = 0;
+  setTimeout(function(){
+    imageContainer.style.zIndex = 2;
+  }, 505)
+  videoBackground.style.opacity = 0;
+  videoBackground.style.zIndex = -1;
+  imageHolder.style.opacity = 0;
+}
+
+function close4psPizz(){
+  setTimeout(function(){
+    fourPsPizz.classList.remove("image_active");
+  }, 505);
+  imageContainer.style.top = -110 + "%";
+  imageContainer.style.opacity = 0;
+  setTimeout(function(){
+    imageContainer.style.zIndex = 2;
+  }, 505)
+  videoBackground.style.opacity = 0;
+  videoBackground.style.zIndex = -1;
+  imageHolder.style.opacity = 0;
+}
+
+function closeGraduation(){
+  setTimeout(function(){
+    graduation.classList.remove("image_active");
+  }, 505);
+  imageContainer.style.top = -110 + "%";
+  imageContainer.style.opacity = 0;
+  setTimeout(function(){
+    imageContainer.style.zIndex = 2;
+  }, 505)
+  videoBackground.style.opacity = 0;
+  videoBackground.style.zIndex = -1;
+  imageHolder.style.opacity = 0;
+}
+
+function closeFries(){
+  setTimeout(function(){
+    fries.classList.remove("image_active");
+  }, 505);
+  imageContainer.style.top = -110 + "%";
+  imageContainer.style.opacity = 0;
+  setTimeout(function(){
+    imageContainer.style.zIndex = 2;
+  }, 505)
+  videoBackground.style.opacity = 0;
+  videoBackground.style.zIndex = -1;
+  imageHolder.style.opacity = 0;
+}
+
+function closeSexy2(){
+  setTimeout(function(){
+    sexy2.classList.remove("image_active");
+  }, 505);
+  imageContainer.style.top = -110 + "%";
+  imageContainer.style.opacity = 0;
+  setTimeout(function(){
+    imageContainer.style.zIndex = 2;
+  }, 505)
+  videoBackground.style.opacity = 0;
+  videoBackground.style.zIndex = -1;
+  imageHolder.style.opacity = 0;
+}
+
+function closeCinematic(){
+  setTimeout(function(){
+    cinematic.classList.remove("image_active");
+  }, 505);
+  imageContainer.style.top = -110 + "%";
+  imageContainer.style.opacity = 0;
+  setTimeout(function(){
+    imageContainer.style.zIndex = 2;
+  }, 505)
+  videoBackground.style.opacity = 0;
+  videoBackground.style.zIndex = -1;
+  imageHolder.style.opacity = 0;
+}
+
+function closeCinestar(){
+  setTimeout(function(){
+    cinestar.classList.remove("image_active");
+  }, 505);
+  imageContainer.style.top = -110 + "%";
+  imageContainer.style.opacity = 0;
+  setTimeout(function(){
+    imageContainer.style.zIndex = 2;
+  }, 505)
+  videoBackground.style.opacity = 0;
+  videoBackground.style.zIndex = -1;
+  imageHolder.style.opacity = 0;
+}
+
+function closeSexy1(){
+  setTimeout(function(){
+    sexy1.classList.remove("image_active");
+  }, 505);
+  imageContainer.style.top = -110 + "%";
+  imageContainer.style.opacity = 0;
+  setTimeout(function(){
+    imageContainer.style.zIndex = 2;
+  }, 505)
+  videoBackground.style.opacity = 0;
+  videoBackground.style.zIndex = -1;
+  imageHolder.style.opacity = 0;
+}
+
 function fourPsPizzContainer(){
   fourPsPizz.classList.add("image_active");
   imageContainer.style.top = 0 + "%";
