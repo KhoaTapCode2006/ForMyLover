@@ -23,8 +23,8 @@ let cinestar = document.getElementById("cinestar");
 let cinematic = document.getElementById("cinematic");
 let sexy1 = document.getElementById("sexy1");
 let sexy2 = document.getElementById("sexy2");
-let imageContainer = document.getElementById("image_container");
-
+let imageContainer = document.getElementById("image_container_center");
+let imageHolder = document.getElementById("image_container");
 
 function fourPsPizzContainer(){
   fourPsPizz.classList.add("image_active");
@@ -33,6 +33,7 @@ function fourPsPizzContainer(){
   imageContainer.style.zIndex = 2;
   videoBackground.style.opacity = 0.5;
   videoBackground.style.zIndex = 2;
+  imageHolder.style.opacity = 1;
 }
 
 function shhCuteContainer(){
@@ -42,6 +43,8 @@ function shhCuteContainer(){
   imageContainer.style.zIndex = 2;
   videoBackground.style.opacity = 0.5;
   videoBackground.style.zIndex = 2;
+  imageHolder.style.opacity = 1;
+
 }
 
 
@@ -52,6 +55,8 @@ function graduationContainer(){
   imageContainer.style.zIndex = 2;
   videoBackground.style.opacity = 0.5;
   videoBackground.style.zIndex = 2;
+  imageHolder.style.opacity = 1;
+
 }
 
 
@@ -62,6 +67,8 @@ function friesContainer(){
   imageContainer.style.zIndex = 2;
   videoBackground.style.opacity = 0.5;
   videoBackground.style.zIndex = 2;
+  imageHolder.style.opacity = 1;
+
 }
 
 
@@ -72,6 +79,8 @@ function cinematicContainer(){
   imageContainer.style.zIndex = 2;
   videoBackground.style.opacity = 0.5;
   videoBackground.style.zIndex = 2;
+  imageHolder.style.opacity = 1;
+
 }
 
 
@@ -82,6 +91,8 @@ function cinestarContainer(){
   imageContainer.style.zIndex = 2;
   videoBackground.style.opacity = 0.5;
   videoBackground.style.zIndex = 2;
+  imageHolder.style.opacity = 1;
+
 }
 
 function sexy1Container(){
@@ -91,6 +102,8 @@ function sexy1Container(){
   imageContainer.style.zIndex = 2;
   videoBackground.style.opacity = 0.5;
   videoBackground.style.zIndex = 2;
+  imageHolder.style.opacity = 1;
+
 }
 
 function sexy2Container(){
@@ -100,6 +113,8 @@ function sexy2Container(){
   imageContainer.style.zIndex = 2;
   videoBackground.style.opacity = 0.5;
   videoBackground.style.zIndex = 2;
+  imageHolder.style.opacity = 1;
+
 }
 
 
@@ -110,6 +125,7 @@ happyMood.addEventListener("click", function(){
   happyVideo.style.zIndex = 3;
   videoBackground.style.opacity = 0.5;
   videoBackground.style.zIndex = 2;
+  
 
 });
 
