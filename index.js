@@ -14,6 +14,7 @@ let happyVideo = document.getElementById("happy_video_container");
 let loveVideo = document.getElementById("love_video_container");
 let sadVideo = document.getElementById("sad_video_container");
 
+
 let fourPsPizz = document.getElementById("4ps_pizz");
 let shhCute = document.getElementById("shh_cute");
 let graduation = document.getElementById("graduation");
@@ -123,15 +124,15 @@ loveMood.addEventListener("click", function(){
 function closeVideoContainer(){
   sadVideo.style.top = -80 + "%";
   sadVideo.style.opacity = 0;
-  sadVideo.style.zIndex = 0;
+  sadVideo.style.zIndex = -1;
 
   loveVideo.style.top = -80 + "%";
   loveVideo.style.opacity = 0;
-  loveVideo.style.zIndex = 0;
+  loveVideo.style.zIndex = -1;
 
   happyVideo.style.top = -80 + "%";
   happyVideo.style.opacity = 0;
-  happyVideo.style.zIndex = 0;
+  happyVideo.style.zIndex = -1;
   
   videoBackground.style.opacity = 0;
   videoBackground.style.zIndex = -1;

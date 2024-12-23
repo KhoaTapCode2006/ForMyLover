@@ -240,7 +240,7 @@ body{
   position: fixed;
   top:-80%;
   margin: 0px 50px 0px 50px;
-  z-index: 3;
+  z-index: -1;
   padding: 30px 100px 30px 100px;
   border: 2px black solid;
   background-color: white;
